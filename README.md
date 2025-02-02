@@ -150,7 +150,7 @@ Frontend will run on http://localhost:3000
 
 • Backend: Deployed on Render →  https://zippy-link.onrender.com
 
-• Frontend: Deployed on Vercel → https://your-frontend.vercel.app
+• Frontend: Deployed on Vercel → https://zippy-linke.vercel.app
 
 
 
@@ -170,9 +170,9 @@ npm test
 
 • GitHub Repo: Yhttps://github.com/ibtissemkraiem/Zippy-Link.git
 
-• Backend URL: https://your-backend.onrender.com
+• Backend URL: https://zippy-link.onrender.com
 
-• Frontend URL: https://your-frontend.vercel.app
+• Frontend URL: https://zippy-linke.vercel.app
 
 
 
