@@ -1,5 +1,6 @@
-const shortid = require('shortid');
+const shortid = require("shortid");
 const Url = require("../models/Url"); 
+const base_url = process.env.BASE_URL;
 
 const createShortUrl = async (longUrl) => {
     if (!longUrl) {
@@ -9,14 +10,14 @@ const createShortUrl = async (longUrl) => {
     // Check if the URL already exists
     let urlEntry = await Url.findOne({ longUrl });
 
-    if (urlEntry) return `http://localhost:5000/${urlEntry.shortUrl}`;
+    if (urlEntry) return `${base_url}/${urlEntry.shortUrl}`;
 
     // Generate Short URL
     const shortUrl = shortid.generate();
     const newUrl = new Url({ longUrl, shortUrl });
     await newUrl.save();
 
-    return `http://localhost:5000/${shortUrl}`;
+    return `${base_url}/${shortUrl}`;
 };
 
 const getLongUrl = async (shortUrl) => {
