@@ -168,7 +168,7 @@ npm test
 
 📌 Submission
 
-• GitHub Repo: Yhttps://github.com/ibtissemkraiem/Zippy-Link.git
+• GitHub Repo: https://github.com/ibtissemkraiem/Zippy-Link.git
 
 • Backend URL: https://zippy-link.onrender.com
 
