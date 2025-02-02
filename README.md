@@ -148,7 +148,7 @@ Frontend will run on http://localhost:3000
 
 📌 Deployment
 
-• Backend: Deployed on Render → https://your-backend.onrender.com
+• Backend: Deployed on Render →  https://zippy-link.onrender.com
 
 • Frontend: Deployed on Vercel → https://your-frontend.vercel.app
 
