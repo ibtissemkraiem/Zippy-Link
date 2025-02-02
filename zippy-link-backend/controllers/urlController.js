@@ -1,3 +1,4 @@
+const validUrl = require("valid-url");
 const urlService = require("../services/urlService");
 
 const shortenUrl = async (req, res) => {
@@ -5,11 +6,16 @@ const shortenUrl = async (req, res) => {
         const { longUrl } = req.body;
         console.log("Received Url:", longUrl);
 
+        // Validate URL
+        if (!validUrl.isUri(longUrl)) {
+            return res.status(400).json({ error: "Invalid URL format" });
+        }
+
         const shortUrl = await urlService.createShortUrl(longUrl);
 
         res.json({ shortUrl });
     } catch (error) {
-        console.error("Shorten URL Error:", error.message); 
+        console.error("Shorten URL Error:", error.message);
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
