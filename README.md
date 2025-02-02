@@ -48,9 +48,11 @@ This is a simple URL shortening service built with **Node.js, Express, MongoDB, 
 
 
 
-### 1️⃣ Clone the Repository
+### 
+
 
 ```sh
+1️⃣ Clone the Repository
 
 git clone https://github.com/ibtissemkraiem/Zippy-Link.git
 
